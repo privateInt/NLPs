@@ -17,6 +17,7 @@
   1. NLPs의 구현 가능성 확인
   2. agent fine-tuning 및 serving 시 한계 파악 및 성능 향상 방안 연구
 ```
+- 관련자료: NLPs prototype 개발제안서.pptx
 
 
 
