@@ -11,8 +11,17 @@
 </div>
 </details>
 
+<details>
+<summary>security</summary>
+<div markdown="1">
 
 <img width="905" alt="20241206_092629" src="https://github.com/user-attachments/assets/56a98e51-da5b-4b85-9a9b-dafc8fde6155">
+
+</div>
+</details>
+
+
+
 
 
 # NLPs prototype 개요
