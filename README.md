@@ -25,10 +25,14 @@
 
 # NLPs prototype Hardware 선정
 - 선정 Hardware
-| 품명 | 수량 | 비고 |
-|------|--------|------|
-|ASUS ESC4000-E11 2U 4GPU SERVER|1|None|
-|ASUS ESC4000-E11 2U 4GPU SERVER|1|None|
+| 품명 | 수량 또는 방식 |
+|------|--------|
+|NVIDIA Ada L40S 48GB GDDR6 PCIe|4|
+|Samsung SSD PM893 1.92TB, 2.5in|2|
+|32G DDR5 RDIMM|16|
+|RAID|16|
+|32G DDR5 RDIMM|16|
+
 - Hardware 선정 근거: Llama, Qwen, Mistral 데이터 시트의 연산 속도(TFLOPS)GPU memory 사용량, inference 속도 등을 비교
 - 관련자료: NLPs prototype LLM 및 GPU 선정.pptx
 
