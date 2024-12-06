@@ -4,10 +4,8 @@
 LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설치
 ```
 
-관련자료: NLPs 개발계획.pptx
-
 <details>
-<summary>관련자료 미리보기</summary>
+<summary>관련자료 미리보기 (NLPs 개발계획.pptx)</summary>
 <div markdown="1">
 
 <img width="824" alt="20241206_092613" src="https://github.com/user-attachments/assets/f797a105-2f4e-4d4b-bcfb-c737414a7dba">
@@ -31,10 +29,8 @@ LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설
 2. agent fine-tuning 및 serving 시 한계 파악 및 성능 향상 방안 연구
 ```
 
-관련자료: NLPs prototype 개발제안서.pptx
-
 <details>
-<summary>관련자료 미리보기</summary>
+<summary>관련자료 미리보기 (NLPs prototype 개발제안서.pptx)</summary>
 <div markdown="1">
   
 <img width="762" alt="20241206_162330" src="https://github.com/user-attachments/assets/056eab4e-822c-4feb-85c3-d00f19a140a2">
@@ -55,10 +51,8 @@ Llama-3.1-70B-Instruct
 Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, inference 속도 비교
 ```
 
-관련자료: NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype LLM 기본성능 테스트.xlsx
-
 <details>
-<summary>LLM 관련자료 미리보기</summary>
+<summary>LLM 관련자료 미리보기 ( NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype LLM 기본성능 테스트.xlsx)</summary>
 <div markdown="1">
 
 <img width="736" alt="20241206_114802" src="https://github.com/user-attachments/assets/44855ed1-2e39-40ed-b09a-ffd4e14dff0c">
@@ -84,10 +78,8 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 fine-tuning, inference시 RAM, GPU memory 사용량 등 비교 (개발 GPU서버가 없어 fine-tuning 성능도 파악함)
 ```
 
-관련자료: NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx
-
 <details>
-<summary>LLM 관련자료 미리보기</summary>
+<summary>LLM 관련자료 미리보기 (NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx)</summary>
 <div markdown="1">
 
 안녕
