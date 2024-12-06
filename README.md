@@ -18,20 +18,17 @@
 # NLPs prototype LLM 선정
 - 선정 LLM: Llama-3.1-70B-Instruct
 - LLM 선정 근거: Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, inference 속도 등을 비교
-- 관련자료: NLPs prototype LLM 기본성능 테스트.xlsx, NLPs prototype LLM 및 GPU 선정.pptx
+- 관련자료: NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype LLM 기본성능 테스트.xlsx
 <img width="736" alt="20241206_114802" src="https://github.com/user-attachments/assets/44855ed1-2e39-40ed-b09a-ffd4e14dff0c">
 <img width="706" alt="20241206_114808" src="https://github.com/user-attachments/assets/f740a114-79e5-4e80-937c-81dbb4d53ee4">
 
 
 # NLPs prototype Hardware 선정
 - 선정 Hardware
-- 
-| 품명 | 수량 또는 방식 |
+| 품명 | 수량 |
 |------|--------|
 |NVIDIA Ada L40S 48GB GDDR6 PCIe|4|
 |Samsung SSD PM893 1.92TB, 2.5in|2|
-|32G DDR5 RDIMM|16|
-|RAID|16|
 |32G DDR5 RDIMM|16|
 
 - Hardware 선정 근거: 
