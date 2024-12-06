@@ -25,6 +25,7 @@
 
 # NLPs prototype Hardware 선정
 - 선정 Hardware
+
 | 품명 | 수량 |
 |------|--------|
 |NVIDIA Ada L40S 48GB GDDR6 PCIe|4|
