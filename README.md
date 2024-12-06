@@ -1,5 +1,5 @@
 # NLPs 개요
-- NLPs: LLM agent(번역, 챗봇, 분석 등)조합 on-premise 형태로 개발 및 GPU 서버 설치
+- NLPs: LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설치
 - 관련자료: NLPs 개발계획.pptx
 
 <details>
