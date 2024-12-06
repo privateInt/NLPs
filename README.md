@@ -23,13 +23,14 @@
 <img width="706" alt="20241206_114808" src="https://github.com/user-attachments/assets/f740a114-79e5-4e80-937c-81dbb4d53ee4">
 
 
-# NLPs prototype LLM 선정
+# NLPs prototype Hardware 선정
 - 선정 Hardware
-
 | 품명 | 수량 | 비고 |
 |------|--------|------|
-|requirements|환경 설치 파일|환경 설치 파일|
+|ASUS ESC4000-E11 2U 4GPU SERVER|1|-|
+|ASUS ESC4000-E11 2U 4GPU SERVER|1||
 - Hardware 선정 근거: Llama, Qwen, Mistral 데이터 시트의 연산 속도(TFLOPS)GPU memory 사용량, inference 속도 등을 비교
+- 관련자료: NLPs prototype LLM 및 GPU 선정.pptx
 
 
 
