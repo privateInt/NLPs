@@ -27,8 +27,8 @@
 - 선정 Hardware
 | 품명 | 수량 | 비고 |
 |------|--------|------|
-|ASUS ESC4000-E11 2U 4GPU SERVER|1|-|
-|ASUS ESC4000-E11 2U 4GPU SERVER|1||
+|ASUS ESC4000-E11 2U 4GPU SERVER|1|None|
+|ASUS ESC4000-E11 2U 4GPU SERVER|1|None|
 - Hardware 선정 근거: Llama, Qwen, Mistral 데이터 시트의 연산 속도(TFLOPS)GPU memory 사용량, inference 속도 등을 비교
 - 관련자료: NLPs prototype LLM 및 GPU 선정.pptx
 
