@@ -6,18 +6,10 @@ LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설
 - 관련자료: NLPs 개발계획.pptx
 
 <details>
-<summary>system architecture</summary>
+<summary>관련자료 미리보기</summary>
 <div markdown="1">
 
 <img width="824" alt="20241206_092613" src="https://github.com/user-attachments/assets/f797a105-2f4e-4d4b-bcfb-c737414a7dba">
-
-</div>
-</details>
-
-<details>
-<summary>security</summary>
-<div markdown="1">
-
 <img width="905" alt="20241206_092629" src="https://github.com/user-attachments/assets/56a98e51-da5b-4b85-9a9b-dafc8fde6155">
 
 </div>
