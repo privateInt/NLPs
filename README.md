@@ -74,8 +74,9 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 
 Hardware 선정시 고려사항
 ```sh
-1. fine-tuning, inference시 RAM, GPU memory 사용량
-2. 가격
+1. 가격 및 구입 소요 시간
+2. fine-tuning, inference시 RAM, GPU memory 사용량
+3. LLM 용량
 ```
 
 <details>
