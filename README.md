@@ -3,15 +3,15 @@
 - 관련자료: NLPs 개발계획.pptx
 
 <details>
-<summary>토글 접기/펼치기</summary>
+<summary>system architecture</summary>
 <div markdown="1">
 
-안녕
+<img width="824" alt="20241206_092613" src="https://github.com/user-attachments/assets/f797a105-2f4e-4d4b-bcfb-c737414a7dba">
 
 </div>
 </details>
 
-<img width="824" alt="20241206_092613" src="https://github.com/user-attachments/assets/f797a105-2f4e-4d4b-bcfb-c737414a7dba">
+
 <img width="905" alt="20241206_092629" src="https://github.com/user-attachments/assets/56a98e51-da5b-4b85-9a9b-dafc8fde6155">
 
 
