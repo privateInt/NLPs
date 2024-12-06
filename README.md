@@ -33,7 +33,7 @@
 |Samsung SSD PM893 1.92TB, 2.5in|2|
 |32G DDR5 RDIMM|16|
 
-- Hardware 선정 근거: 
+- Hardware 선정 근거: fine-tuning, inference시 RAM, GPU memory 사용량 등 비교 (개발 GPU서버가 없어 fine-tuning 성능도 파악함)
 - 관련자료: NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx
 
 
