@@ -45,7 +45,7 @@ NLPs prototype 제작 목적
 ```sh
 Llama-3.1-70B-Instruct
 ```
-- LLM 선정 근거
+LLM 선정 근거
 ```sh
 Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, inference 속도 비교
 ```
