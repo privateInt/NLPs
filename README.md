@@ -21,6 +21,15 @@
 <img width="736" alt="20241206_114802" src="https://github.com/user-attachments/assets/44855ed1-2e39-40ed-b09a-ffd4e14dff0c">
 <img width="706" alt="20241206_114808" src="https://github.com/user-attachments/assets/f740a114-79e5-4e80-937c-81dbb4d53ee4">
 
+- 선정 Hardware
+| 품명 | 수량 | 비고 |
+|------|--------|--------|
+||||
+||||
+||||
+||||
+||||
+||||
 
 
 # 파일 구조
