@@ -12,7 +12,11 @@
 # NLPs prototype 개요
 
 - NLPs prototype: 번역 agent 개발 테스트
-- NLPs prototype 제작 목적: agent fine-tuning 및 serving 시 한계 파악 및 성능 향상 방안 연구
+- NLPs prototype 제작 목적
+```sh
+1. NLPs의 구현 가능성 확인
+2. agent fine-tuning 및 serving 시 한계 파악 및 성능 향상 방안 연구
+```
 
 
 # 파일 구조
