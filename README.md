@@ -16,8 +16,6 @@ LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설
 
 
 
-
-
 # NLPs prototype 개요
 - NLPs prototype이란?
 ```sh
@@ -39,6 +37,7 @@ LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설
 
 </div>
 </details>
+
 
 
 # NLPs prototype LLM 선정
@@ -73,9 +72,10 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 |Samsung SSD PM893 1.92TB, 2.5in|2|
 |32G DDR5 RDIMM|16|
 
-- Hardware 선정 근거
+- Hardware 선정시 고려사항
 ```sh
-fine-tuning, inference시 RAM, GPU memory 사용량 등 비교 (개발 GPU서버가 없어 fine-tuning 성능도 파악함)
+1. fine-tuning, inference시 RAM, GPU memory 사용량
+2. 가격
 ```
 
 <details>
