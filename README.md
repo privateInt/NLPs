@@ -28,7 +28,7 @@
 
 | 품명 | 수량 |
 |------|--------|
-|Intel® Xeon® Silver 4516Y+ (24Core, 2.2GHz, 45M, 185W|2|
+|Intel® Xeon® Silver 4516Y+ (24Core, 2.2GHz, 45M, 185W)|2|
 |NVIDIA Ada L40S 48GB GDDR6 PCIe|4|
 |Samsung SSD PM893 1.92TB, 2.5in|2|
 |32G DDR5 RDIMM|16|
