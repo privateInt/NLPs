@@ -1,6 +1,6 @@
 # NLPs 개요
 
-- NLPs: 고객에 요청에 따른 LLM agent(번역, 챗봇, 분석 등)조합 시스템
+- NLPs: 고객 요청에 따른 LLM agent(번역, 챗봇, 분석 등)조합 시스템
 - 관련자료: NLPs 개발계획.pptx
 
 
@@ -9,7 +9,7 @@
 <img width="905" alt="20241206_092629" src="https://github.com/user-attachments/assets/56a98e51-da5b-4b85-9a9b-dafc8fde6155">
 
 
-# 기능
+# NLPs prototype 개요
 
 - OCR API(google_general, naver_general, upstage_general, upstage_layout_analysis)를 선택할 수 있다.
 - 입력 파일(pdf, zip, tar, png, jpg)을 OCR하여 docx로 반환한다.
