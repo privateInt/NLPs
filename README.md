@@ -3,7 +3,8 @@
 ```sh
 LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설치
 ```
-- 관련자료: NLPs 개발계획.pptx
+
+관련자료: NLPs 개발계획.pptx
 
 <details>
 <summary>관련자료 미리보기</summary>
