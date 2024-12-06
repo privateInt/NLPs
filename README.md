@@ -34,7 +34,7 @@
 |32G DDR5 RDIMM|16|
 
 - Hardware 선정 근거: 
-- 관련자료: NLPs prototype LLM 및 GPU 선정.pptx
+- 관련자료: NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx
 
 
 
