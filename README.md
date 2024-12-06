@@ -3,10 +3,9 @@
 - NLPs는 고객에 요청에 따른 LLM agent(번역, 챗봇, 분석 등)들이 상호작용하여 결과를 제공하는 프로젝트를 의미한다.
 - 자세한 내용은 NLPs 개발계획.pptx 참고 부탁드리겠습니다.
 
-system architecture
+
 <img width="824" alt="20241206_092613" src="https://github.com/user-attachments/assets/f797a105-2f4e-4d4b-bcfb-c737414a7dba">
 
-security
 <img width="905" alt="20241206_092629" src="https://github.com/user-attachments/assets/56a98e51-da5b-4b85-9a9b-dafc8fde6155">
 
 
