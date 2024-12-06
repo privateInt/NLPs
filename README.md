@@ -51,7 +51,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 ```
 
 <details>
-<summary>LLM 관련자료 미리보기 ( NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype LLM 기본성능 테스트.xlsx)</summary>
+<summary>관련자료 미리보기 ( NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype LLM 기본성능 테스트.xlsx)</summary>
 <div markdown="1">
 
 <img width="736" alt="20241206_114802" src="https://github.com/user-attachments/assets/44855ed1-2e39-40ed-b09a-ffd4e14dff0c">
@@ -79,7 +79,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 ```
 
 <details>
-<summary>LLM 관련자료 미리보기 (NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx)</summary>
+<summary>관련자료 미리보기 (NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx)</summary>
 <div markdown="1">
 
 <img width="792" alt="20241206_162914" src="https://github.com/user-attachments/assets/59925681-af60-4364-a574-77448b0b00a6">
