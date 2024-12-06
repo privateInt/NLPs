@@ -15,17 +15,21 @@
 - 관련자료: NLPs prototype 개발제안서.pptx
 
 
-# NLPs prototype LLM 및 Hardware 선정
+# NLPs prototype LLM 선정
 - 선정 LLM: Llama-3.1-70B-Instruct
 - LLM 선정 근거: Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, inference 속도 등을 비교
+- 관련자료: NLPs prototype LLM 기본성능 테스트.xlsx, NLPs prototype LLM 및 GPU 선정.pptx
 <img width="736" alt="20241206_114802" src="https://github.com/user-attachments/assets/44855ed1-2e39-40ed-b09a-ffd4e14dff0c">
 <img width="706" alt="20241206_114808" src="https://github.com/user-attachments/assets/f740a114-79e5-4e80-937c-81dbb4d53ee4">
 
+
+# NLPs prototype LLM 선정
 - 선정 Hardware
 
 | 품명 | 수량 | 비고 |
 |------|--------|------|
 |requirements|환경 설치 파일|환경 설치 파일|
+- Hardware 선정 근거: Llama, Qwen, Mistral 데이터 시트의 연산 속도(TFLOPS)GPU memory 사용량, inference 속도 등을 비교
 
 
 
