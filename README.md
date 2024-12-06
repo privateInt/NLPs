@@ -1,5 +1,5 @@
 # NLPs 개요
-- NLPs란?
+NLPs란?
 ```sh
 LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설치
 ```
@@ -17,11 +17,11 @@ LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설
 
 
 # NLPs prototype 개요
-- NLPs prototype이란?
+NLPs prototype이란?
 ```sh
 금융 분야 특화 번역 agent 개발 테스트
 ```
-- NLPs prototype 제작 목적
+NLPs prototype 제작 목적
 ```sh
 1. NLPs의 구현 가능성 확인
 2. agent fine-tuning 및 serving 시 한계 파악 및 성능 향상 방안 연구
@@ -41,7 +41,7 @@ LLM agent(번역, 챗봇, 분석 등)조합 on-premise 개발 및 GPU 서버 설
 
 
 # NLPs prototype LLM 선정
-- 선정 LLM
+선정 LLM
 ```sh
 Llama-3.1-70B-Instruct
 ```
@@ -63,7 +63,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 
 
 # NLPs prototype Hardware 선정
-- 선정 Hardware
+선정 Hardware
 
 | 품명 | 수량 |
 |------|--------|
@@ -72,7 +72,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 |Samsung SSD PM893 1.92TB, 2.5in|2|
 |32G DDR5 RDIMM|16|
 
-- Hardware 선정시 고려사항
+Hardware 선정시 고려사항
 ```sh
 1. fine-tuning, inference시 RAM, GPU memory 사용량
 2. 가격
