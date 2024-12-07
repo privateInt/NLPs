@@ -99,6 +99,7 @@ Hardware 선정시 고려사항
 |LoRA_r|16|
 |QLoRA|4bit|
 |dtype|bf16|
+|epoch|3|
 |per_device_train_batch_size|2|
 |gradient_accumulation_steps|4|
 |learning_rate|2e-4|
