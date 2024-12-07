@@ -94,7 +94,7 @@ Hardware 선정시 고려사항
 # NLPs prototype fine-tuning
 1차 fine-tuning 실험
 
-| 항목 | 수치 |
+| 항목 | 수치 및 내용 |
 |------|--------|
 |LoRA_r|16|
 |QLoRA|4bit|
