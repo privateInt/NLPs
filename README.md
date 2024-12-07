@@ -101,11 +101,14 @@ Hardware 선정시 고려사항
 |dtype|bf16|
 |per_device_train_batch_size|2|
 |gradient_accumulation_steps|4|
+|learning_rate|2e-4|
+|warmup_steps|1000|
 |GPU memory usage|약 43GB|
 
 1차 fine-tuning 실험 결과 및 개선 사항
 
 <img width="499" alt="20241207_114905" src="https://github.com/user-attachments/assets/188d0688-ec47-4a36-99a1-fe3ff9759b00">
+![W B Chart 2024  12  7  오후 4_44_25 (1)](https://github.com/user-attachments/assets/906c0c13-0b4e-4b38-adce-7b9b76a61fdd)
 <img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
 
 ```sh
