@@ -91,8 +91,8 @@ Hardware 선정시 고려사항
 </div>
 </details>
 
-# NLPs prototype fine-tuning
-1차 fine-tuning 실험
+# NLPs prototype fine-tuning 1차 실험
+hyper parameter
 
 | 항목 | 수치 및 내용 |
 |------|--------|
@@ -106,7 +106,7 @@ Hardware 선정시 고려사항
 |warmup_steps|1000|
 |GPU memory usage|약 43GB|
 
-1차 fine-tuning 실험 결과 및 개선 사항
+실험 결과 및 개선 사항
 
 <img width="499" alt="20241207_114905" src="https://github.com/user-attachments/assets/188d0688-ec47-4a36-99a1-fe3ff9759b00">
 <img width="211" alt="20241207_165834" src="https://github.com/user-attachments/assets/94b77e3e-d3ee-40a9-842d-8ce1173514f0">
