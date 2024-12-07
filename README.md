@@ -108,9 +108,7 @@ Hardware 선정시 고려사항
 1차 fine-tuning 실험 결과 및 개선 사항
 
 <img width="499" alt="20241207_114905" src="https://github.com/user-attachments/assets/188d0688-ec47-4a36-99a1-fe3ff9759b00">
-
-
-
+<img width="211" alt="20241207_165834" src="https://github.com/user-attachments/assets/94b77e3e-d3ee-40a9-842d-8ce1173514f0">
 <img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
 
 ```sh
