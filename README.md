@@ -158,3 +158,11 @@ hyper parameter
 <img width="363" alt="20241207_170641" src="https://github.com/user-attachments/assets/a5061cae-ad3b-4125-8b52-feb24d60a1ca">
 <img width="361" alt="20241207_170635" src="https://github.com/user-attachments/assets/fb94a1c4-25b1-434b-971e-07c6fd5e51e1">
 
+```sh
+# 결과
+
+# 개선을 위한 가설
+
+# 개선 계획
+
+```
