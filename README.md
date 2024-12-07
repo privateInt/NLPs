@@ -108,7 +108,9 @@ Hardware 선정시 고려사항
 1차 fine-tuning 실험 결과 및 개선 사항
 
 <img width="499" alt="20241207_114905" src="https://github.com/user-attachments/assets/188d0688-ec47-4a36-99a1-fe3ff9759b00">
-![W B Chart 2024  12  7  오후 4_44_25 (1)](https://github.com/user-attachments/assets/906c0c13-0b4e-4b38-adce-7b9b76a61fdd)
+
+
+
 <img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
 
 ```sh
@@ -116,12 +118,12 @@ Hardware 선정시 고려사항
 Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있으므로 Loss 진동폭 감소 방안 필요
 
 # 개선을 위한 가설
-1. 학습률(lr)이 너무 높음
-2. 배치 크기(batch_size & gradient_accumulate_step)가 너무 작음
-3. 데이터의 일관성 부족
+1. 배치 크기(batch_size & gradient_accumulate_step)가 너무 작음
+2. 데이터의 일관성 부족
+* 학습률도 loss 진동폭에 영향을 미칠 수 있으나 그래프가 안정적이므로 적절하다 판단함.
 
 # 개선 계획
-1. 학습률과 배치 크기는 hyper parameter tuning으로 금방 검증할 수 있으므로 1순위로 검증한다.
+1. 배치 크기 등 hyper parameter는 금방 검증할 수 있으므로 1순위로 검증한다.
 2. hyper parameter tuning이 효과가 없는 경우 데이터의 중복(같은 한국어를 다른 영어로 번역한 데이터가 있는 경우 등)을 검사한다.
 ```
 
