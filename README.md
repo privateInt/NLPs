@@ -104,8 +104,10 @@ Hardware 선정시 고려사항
 |GPU memory usage|약 43GB|
 
 1차 fine-tuning 실험 결과 및 개선 사항
+
 <img width="695" alt="스크린샷 2024-09-06 오후 12 12 52" src="https://github.com/user-attachments/assets/58a38b2d-1a10-4a87-9f26-5c3c881bd3f9">
 <img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
+
 ```sh
 # 결과
 Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있으므로 Loss 진동폭 감소 필요
