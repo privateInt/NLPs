@@ -92,6 +92,12 @@ Hardware 선정시 고려사항
 </details>
 
 # NLPs prototype fine-tuning
+1차 fine-tuning 실험
 
-
+| 항목 | 수치 |
+|------|--------|
+|LoRA_r|16|
+|QLoRA|4bit|
+|dtype|bf16|
+|32G DDR5 RDIMM|16|
 
