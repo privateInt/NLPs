@@ -91,6 +91,8 @@ Hardware 선정시 고려사항
 </div>
 </details>
 
+
+
 # NLPs prototype fine-tuning 1차 실험
 hyper parameter
 
@@ -125,4 +127,31 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 1. 배치 크기 등 hyper parameter는 금방 검증할 수 있으므로 1순위로 검증한다.
 2. hyper parameter tuning이 효과가 없는 경우 데이터의 중복(같은 한국어를 다른 영어로 번역한 데이터가 있는 경우 등)을 검사한다.
 ```
+
+
+
+# NLPs prototype fine-tuning 2차 실험
+hyper parameter
+
+| 항목 | 수치 및 내용 |
+|------|--------|
+|LoRA_r|16|
+|QLoRA|4bit|
+|dtype|bf16|
+|epoch|10|
+|per_device_train_batch_size|32|
+|gradient_accumulation_steps|4|
+|learning_rate|2e-4|
+|warmup_steps|1000|
+|GPU memory usage|약 69GB|
+
+테스트 목록
+```sh
+1. per_device_train_batch_size: 2 -> 32 (현재 GPU에서 작동 가능 여부, Loss 진동폭 감소 여부 확인)
+2. epoch: 3 -> 10 (이후 epoch별 check point의 성능을 점검하여 최적의 epoch 선정)
+3. 한국어로 fine-tuning된 8B 모델(allganize/Llama-3-Alpha-Ko-8B-Instruct) 추가 테스트 
+```
+
+실험 결과 및 개선 사항
+
 
