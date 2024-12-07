@@ -31,9 +31,9 @@ NLPs prototype 제작 목적
 <summary>관련자료 미리보기 (NLPs prototype 개발제안서.pptx)</summary>
 <div markdown="1">
   
-<img width="762" alt="20241206_162330" src="https://github.com/user-attachments/assets/056eab4e-822c-4feb-85c3-d00f19a140a2">
 <img width="784" alt="20241206_162322" src="https://github.com/user-attachments/assets/ad9183d3-e2ea-4690-b4ea-24eab3f4084b">
 <img width="781" alt="20241206_162316" src="https://github.com/user-attachments/assets/41ce07ee-a8d4-47c2-b0c0-2280083e81ac">
+<img width="762" alt="20241206_162330" src="https://github.com/user-attachments/assets/056eab4e-822c-4feb-85c3-d00f19a140a2">
 
 </div>
 </details>
