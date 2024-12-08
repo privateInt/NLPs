@@ -170,9 +170,15 @@ allganize/Llama-3-Alpha-Ko-8B-Instruct fine-tuning model inference 예시
 
 ```sh
 # 결과
-한국어로 fine-tuning된 8B 모델
+1. batch_size 증가로 loss 진동폭 안정화 됨
+2. epoch는 2 ~ 3정도가 충분했으며, 그 이상은 overfitting 현상을 보임
+3. 한국어로 fine-tuning된 8B 모델과 70B 모델의 차이가 크지 않았음
+   => 8B 모델로 실험 진행후 실험 결과는 70B에 적용하는 것이 시간 효율을 극대화할 수 있다 판단
+4. 짧은 단어에서는 의도한 대로 
+
 
 # 개선을 위한 가설
+1. 
 
 # 개선 계획
 
