@@ -98,6 +98,7 @@ hyper parameter
 
 | 항목 | 수치 및 내용 |
 |------|--------|
+|model|meta-llama/Llama-3.1-70B-Instruct|
 |LoRA_r|16|
 |QLoRA|4bit|
 |dtype|bf16|
@@ -168,6 +169,7 @@ allganize/Llama-3-Alpha-Ko-8B-Instruct fine-tuning model inference 예시
 
 ```sh
 # 결과
+한국어로 fine-tuning된 8B 모델
 
 # 개선을 위한 가설
 
