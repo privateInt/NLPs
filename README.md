@@ -182,3 +182,13 @@ hyper parameter
 1. quantization 8bit 실험 후 추가 실험 필요 여부 판단
 2. RAG(bge-m3)를 사용해 학습 데이터와 inference prompt에 적절한 예시 추가
 ```
+
+<details>
+<summary>관련자료 미리보기 (NLPs 개발계획.pptx)</summary>
+<div markdown="1">
+
+<img width="824" alt="20241206_092613" src="https://github.com/user-attachments/assets/f797a105-2f4e-4d4b-bcfb-c737414a7dba">
+<img width="905" alt="20241206_092629" src="https://github.com/user-attachments/assets/56a98e51-da5b-4b85-9a9b-dafc8fde6155">
+
+</div>
+</details>
