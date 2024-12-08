@@ -154,7 +154,7 @@ hyper parameter
 3. 한국어로 fine-tuning된 8B 모델(allganize/Llama-3-Alpha-Ko-8B-Instruct) 추가 테스트 
 ```
 
-allganize/Llama-3-Alpha-Ko-8B-Instruct fine-tuning model inference 예시
+한국어 8B fine-tuning model inference 예시 (input: 한국어, output: 영어)
 
 <img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
 <img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
