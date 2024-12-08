@@ -136,6 +136,7 @@ hyper parameter
 
 | 항목 | 수치 및 내용 |
 |------|--------|
+|model|meta-llama/Llama-3.1-70B-Instruct, allganize/Llama-3-Alpha-Ko-8B-Instruct|
 |LoRA_r|16|
 |QLoRA|4bit|
 |dtype|bf16|
