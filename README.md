@@ -152,16 +152,18 @@ hyper parameter
 3. 한국어로 fine-tuning된 8B 모델(allganize/Llama-3-Alpha-Ko-8B-Instruct) 추가 테스트 
 ```
 
+allganize/Llama-3-Alpha-Ko-8B-Instruct fine-tuning model inference 예시
+
+<img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
+<img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
+
 실험 결과 및 개선 사항
 
 <img width="281" alt="20241207_170647" src="https://github.com/user-attachments/assets/5fcc170a-2d36-46bb-a33f-c5dfe603b6f6">
 <img width="363" alt="20241207_170641" src="https://github.com/user-attachments/assets/a5061cae-ad3b-4125-8b52-feb24d60a1ca">
 <img width="361" alt="20241207_170635" src="https://github.com/user-attachments/assets/fb94a1c4-25b1-434b-971e-07c6fd5e51e1">
 
-allganize/Llama-3-Alpha-Ko-8B-Instruct fine-tuning 결과
 
-<img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
-<img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
 
 
 ```sh
