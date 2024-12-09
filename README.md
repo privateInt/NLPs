@@ -193,3 +193,12 @@ hyper parameter
 
 </div>
 </details>
+
+
+
+# NLPs prototype API 버전
+NLPs prototype API 버전이란?
+```sh
+회사 일정으로 인해
+NLPs prototype을 openAI 등 API를 사용해 구축 및 테스트
+```
