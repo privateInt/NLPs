@@ -200,5 +200,5 @@ hyper parameter
 NLPs prototype API 버전이란?
 ```sh
 회사 일정으로 인해
-NLPs prototype을 openAI 등 API를 사용해 구축 및 테스트
+openAI 등 API를 사용해 금융 분야 특화 번역 agent 개발 테스트
 ```
