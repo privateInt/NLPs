@@ -221,6 +221,8 @@ RAG 구현 과정
 RAG 개선 사항
 ```sh
 1. faiss, milvus 등 vectorDB 적용하여 실행시간 비교 필요 (현재는 np형태이며 계산도 직접짠 계산식으로 연산)
+2. vectorDB의 중복을 제거하여 실행 속도 향상 필요
+3. classification 등 방법을 통해 vectorDB를 분리하여 실행 속도 향상 필요
 ```
 
 <details>
