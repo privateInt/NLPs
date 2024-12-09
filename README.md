@@ -216,13 +216,14 @@ RAG 구현 과정
 2. cosine similarity 적용 방식 변경 (iteration -> matrix)
    => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나,
       데이터 복제에 시간이 더 소요돼 matrix연산으로 변경
+3. 반드시 특정 단어로 번역돼야 하는 사전 데이터를 우선 적용 후 RAG 적용
 ```
 
 RAG 개선 사항
 ```sh
 1. faiss, milvus 등 vectorDB 적용하여 실행시간 비교 필요 (현재는 np형태이며 계산도 직접짠 계산식으로 연산)
 2. vectorDB의 중복을 제거하여 실행 속도 향상 필요
-3. classification 등 방법을 통해 vectorDB를 분리하여 실행 속도 향상 필요
+3. classification 등 방법을 통해 vectorDB를 분리하여 실행 속도 향상 필요 (classification 기준은 해당 분야 전문가와 협의 필요)
 ```
 
 <details>
@@ -256,9 +257,3 @@ folder
 
 </div>
 </details>
-
-1:1 매칭 알고리즘 구현 과정
-```sh
-1. 
-2. 
-```
