@@ -212,8 +212,9 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 
 RAG 구현 과정
 ```sh
-1. 
-2. 
+1. embedding model (openAI text-embedding-3-small) 선정
+2. cosine similarity 계산 방식 변경 (iteration -> matrix)
+   => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나  
 ```
 
 1:1 매칭 알고리즘 구현 과정
