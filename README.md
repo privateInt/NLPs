@@ -226,9 +226,12 @@ RAG 개선 사항
 <summary>관련자료 미리보기 (NLPs prototype API embedding 모델 선정.docx, NLPs prototype API RAG 효과 분석 .docx, NLPs prototype API RAG 결과 예시.zip)</summary>
 <div markdown="1">
 
-<img width="858" alt="20241208_203642" src="https://github.com/user-attachments/assets/e36ea864-1128-4c08-a5e2-05656f152168">
-<img width="792" alt="20241208_203705" src="https://github.com/user-attachments/assets/7d1b9a7f-a563-40e1-af17-92e344da72dc">
-<img width="760" alt="20241208_203711" src="https://github.com/user-attachments/assets/cba40302-848e-4ecb-8dff-c443b8fa40e4">
+
+
+<img width="459" alt="20241209_185027" src="https://github.com/user-attachments/assets/ebd8259d-d609-4abb-8806-c271a47b16e5">
+<img width="792" alt="20241209_184959" src="https://github.com/user-attachments/assets/d54037ec-b0d5-40cc-a5fa-45bed89456a8">
+<img width="452" alt="20241209_185036" src="https://github.com/user-attachments/assets/67505f19-0cd1-4220-be60-bdf05b1470d2">
+
 
 </div>
 </details>
