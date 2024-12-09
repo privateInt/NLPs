@@ -204,12 +204,6 @@ openAI 등 API를 사용해 기존에 만들었던 번역시스템에
 RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 ```
 
-테스트 목록
-```sh
-1. 번역 예시 데이터로 vectorDB를 구축하여 inference시 적절한 예제 추가 (RAG)
-2. 반드시 특정 단어로 번역돼야 하는 1:1 매칭 사전 알고리즘 적용 (1:1 매칭)
-```
-
 RAG 구현 과정
 ```sh
 1. embedding model (openAI text-embedding-3-small) 선정
