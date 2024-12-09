@@ -214,7 +214,8 @@ RAG 구현 과정
 ```sh
 1. embedding model (openAI text-embedding-3-small) 선정
 2. cosine similarity 적용 방식 변경 (iteration -> matrix)
-   => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나 데이터 복제에 시간이 더 소요돼 matrix연산으로 변경
+   => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나,
+      데이터 복제에 시간이 더 소요돼 matrix연산으로 변경
 ```
 
 RAG 개선 사항
