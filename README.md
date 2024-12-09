@@ -210,7 +210,8 @@ RAG 구현 과정
 2. cosine similarity 적용 방식 변경 (iteration -> matrix)
    => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나,
       데이터 복제에 시간이 더 소요돼 matrix연산으로 변경
-3. 반드시 특정 단어로 번역돼야 하는 사전 데이터를 우선 적용 후 RAG 적용
+3. np.vstack으로 vectorDB 구축 후 fastAPI의 lifespan을 통해 서버 실행시 vectorDB 로드를 한번만 수행
+4. 반드시 특정 단어로 번역돼야 하는 사전 데이터를 우선 적용 후 RAG 적용
 ```
 
 RAG 개선 사항
@@ -252,4 +253,6 @@ folder
 </details>
 
 # 향후 계획
-
+1. on-premise agent 개발 process 정립
+2. pre-processing (ex. document parsing) 고도화
+3. backend 고도화 
