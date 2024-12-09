@@ -213,9 +213,25 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 RAG 구현 과정
 ```sh
 1. embedding model (openAI text-embedding-3-small) 선정
-2. cosine similarity 계산 방식 변경 (iteration -> matrix)
-   => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나  
+2. cosine similarity 적용 방식 변경 (iteration -> matrix)
+   => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나 데이터 복제에 시간이 더 소요돼 matrix연산으로 변경
 ```
+
+RAG 개선 사항
+```sh
+1. faiss, milvus 등 vectorDB 적용하여 실행시간 비교 필요 (현재는 np형태이며 계산도 직접짠 계산식으로 연산)
+```
+
+<details>
+<summary>관련자료 미리보기 (NLPs prototype API embedding 모델 선정.docx, NLPs prototype API RAG 효과 분석 .docx, NLPs prototype API RAG 결과 예시.zip)</summary>
+<div markdown="1">
+
+<img width="858" alt="20241208_203642" src="https://github.com/user-attachments/assets/e36ea864-1128-4c08-a5e2-05656f152168">
+<img width="792" alt="20241208_203705" src="https://github.com/user-attachments/assets/7d1b9a7f-a563-40e1-af17-92e344da72dc">
+<img width="760" alt="20241208_203711" src="https://github.com/user-attachments/assets/cba40302-848e-4ecb-8dff-c443b8fa40e4">
+
+</div>
+</details>
 
 1:1 매칭 알고리즘 구현 과정
 ```sh
