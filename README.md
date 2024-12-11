@@ -87,6 +87,7 @@ Hardware 선정시 고려사항
 <img width="777" alt="20241206_163140" src="https://github.com/user-attachments/assets/6a127c6f-59d3-4dd0-8270-9d007fc0e93d">
 <img width="969" alt="20241206_163205" src="https://github.com/user-attachments/assets/76540b27-d294-4d0c-81ba-21d57cf00314">
 <img width="922" alt="20241206_163242" src="https://github.com/user-attachments/assets/d05796fc-084e-4dd6-84b1-b440accc33a8">
+<img width="352" alt="20241211_091535" src="https://github.com/user-attachments/assets/663067b8-40da-40b9-bd86-ac19b1c9e82e">
 
 </div>
 </details>
