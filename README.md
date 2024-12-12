@@ -177,11 +177,12 @@ hyper parameter
 
 # 개선을 위한 가설
 1. quantization 수치(4bit)가 너무 낮았을 가능성이 있음
-2. 문장이 길어질수록 사용하는 단어가 많기때문에 학습만으로 부족할 수 있음
+2. 문장이 길어질수록 사용하는 단어가 많기때문에 SFT 학습만으로 부족할 수 있음
 
 # 개선 계획
 1. quantization 8bit 실험 후 추가 실험 필요 여부 판단
 2. RAG(bge-m3)를 사용해 학습 데이터와 inference prompt에 적절한 예시 추가
+3. chatGPT 등을 사용하여 DPO 학습 데이터 구축후 DPO 학습 실험
 ```
 
 <details>
