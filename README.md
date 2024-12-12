@@ -254,8 +254,3 @@ folder
 
 </div>
 </details>
-
-# 향후 계획
-1. on-premise agent 개발 process 정립
-2. pre-processing 고도화 (ex. document parsing)
-3. backend 고도화 (ex. kubernetes)
