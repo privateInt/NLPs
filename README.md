@@ -1,7 +1,7 @@
 # NLPs 개요
 NLPs란?
 ```sh
-LLM agent(번역, 챗봇, 분석 등)조합을 on-premise로 개발 하여
+고객요청에 따른 LLM agent(번역, 챗봇, 분석 등)조합을 on-premise로 개발하여
 GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 ```
 
@@ -20,6 +20,7 @@ GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 # NLPs prototype 개요
 NLPs prototype이란?
 ```sh
+개발 프로세스를 정립하기 위해
 금융 분야 특화 번역 agent 개발 테스트
 ```
 NLPs prototype 제작 목적
