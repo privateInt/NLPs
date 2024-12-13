@@ -21,7 +21,7 @@ GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 NLPs prototype이란?
 ```sh
 NLPs 개발 과정에서의 어려움, 노하우 등을 미리 파악하기 위해
-시제품으로써 금융 분야 특화 번역 agent 개발 테스트
+금융 분야 특화 번역 agent 시제품 개발 테스트
 ```
 NLPs prototype 제작 목적
 ```sh
