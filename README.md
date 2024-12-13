@@ -1,7 +1,8 @@
 # NLPs 개요
 NLPs란?
 ```sh
-LLM agent(번역, 챗봇, 분석 등)조합을 on-premise로 개발 후 GPU서버에 설치하여 납품
+LLM agent(번역, 챗봇, 분석 등)조합을 on-premise로 개발 하여
+GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 ```
 
 <details>
