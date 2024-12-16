@@ -43,11 +43,11 @@ NLPs 개발 과정에서의 어려움, 노하우 등을 미리 파악하기 위�
 
 
 # NLPs prototype on-premise LLM 선정
-선정 LLM
+- 선정 LLM
 ```sh
 Llama-3.1-70B-Instruct
 ```
-선정 근거
+- 선정 근거
 ```sh
 Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, inference 속도 비교
 ```
@@ -65,7 +65,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 
 
 # NLPs prototype Hardware 선정
-선정 Hardware
+- 선정 Hardware
 
 | 품명 | 수량 |
 |------|--------|
@@ -74,7 +74,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 |Samsung SSD PM893 1.92TB, 2.5in|2|
 |32G DDR5 RDIMM|16|
 
-Hardware 선정시 고려사항
+- Hardware 선정시 고려사항
 ```sh
 1. 가격 및 구입 소요 시간
 2. fine-tuning, inference시 RAM, GPU memory 사용량
@@ -97,7 +97,7 @@ Hardware 선정시 고려사항
 
 
 # NLPs prototype fine-tuning 1차 실험
-hyper parameter
+- hyper parameter
 
 | 항목 | 수치 및 내용 |
 |------|--------|
@@ -112,7 +112,7 @@ hyper parameter
 |warmup_steps|1000|
 |GPU memory usage|약 43GB|
 
-실험 결과 및 개선 사항
+- 실험 결과 및 개선 사항
 
 <img width="211" alt="20241207_165834" src="https://github.com/user-attachments/assets/94b77e3e-d3ee-40a9-842d-8ce1173514f0">
 <img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
@@ -134,7 +134,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 
 
 # NLPs prototype fine-tuning 2차 실험
-hyper parameter
+- hyper parameter
 
 | 항목 | 수치 및 내용 |
 |------|--------|
@@ -149,7 +149,7 @@ hyper parameter
 |warmup_steps|1000|
 |GPU memory usage|약 69GB|
 
-테스트 목록
+- 테스트 목록
 ```sh
 1. per_device_train_batch_size: 2 -> 32 (현재 GPU에서 작동 가능 여부, Loss 진동폭 감소 여부 확인)
 2. epoch: 3 -> 10 (이후 epoch별 check point의 성능을 점검하여 최적의 epoch 선정)
@@ -167,7 +167,7 @@ hyper parameter
 </details>
 
 
-실험 결과 및 개선 사항
+- 실험 결과 및 개선 사항
 
 <img width="363" alt="20241207_170641" src="https://github.com/user-attachments/assets/a5061cae-ad3b-4125-8b52-feb24d60a1ca">
 <img width="361" alt="20241207_170635" src="https://github.com/user-attachments/assets/fb94a1c4-25b1-434b-971e-07c6fd5e51e1">
@@ -205,13 +205,13 @@ hyper parameter
 
 
 # NLPs prototype API 버전
-NLPs prototype API 버전이란?
+- NLPs prototype API 버전이란?
 ```sh
 기존에 구축한 범용 번역시스템에
 RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 ```
 
-RAG 구현 과정
+- RAG 구현 과정
 ```sh
 1. embedding model (openAI text-embedding-3-small) 선정
 2. cosine similarity 적용 방식 변경 (iteration -> matrix)
@@ -221,7 +221,7 @@ RAG 구현 과정
 4. 반드시 특정 단어로 번역돼야 하는 사전 데이터를 우선 적용 후 RAG 적용
 ```
 
-RAG 개선 사항
+- RAG 개선 사항
 ```sh
 1. faiss, milvus 등 vectorDB 적용하여 실행시간 비교 필요 
    (현재는 np형태이며 계산도 직접짠 계산식으로 연산)
