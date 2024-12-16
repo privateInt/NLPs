@@ -1,7 +1,7 @@
 # NLPs 개요
 NLPs란?
 ```sh
-고객요청에 따른 LLM agent(번역, 챗봇, 분석 등)조합을 on-premise로 개발하여
+고객요청에 따른 LLM agent(번역, 챗봇, 분석 등)조합을 on-premise 또는 API로 개발하여
 GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 ```
 
@@ -201,8 +201,7 @@ hyper parameter
 # NLPs prototype API 버전
 NLPs prototype API 버전이란?
 ```sh
-회사 일정으로 인해
-openAI 등 API를 사용해 기존에 만들었던 번역시스템에
+기존에 구축한 범용 번역시스템에
 RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 ```
 
