@@ -163,7 +163,6 @@ hyper parameter
 
 실험 결과 및 개선 사항
 
-<img width="281" alt="20241207_170647" src="https://github.com/user-attachments/assets/5fcc170a-2d36-46bb-a33f-c5dfe603b6f6">
 <img width="363" alt="20241207_170641" src="https://github.com/user-attachments/assets/a5061cae-ad3b-4125-8b52-feb24d60a1ca">
 <img width="361" alt="20241207_170635" src="https://github.com/user-attachments/assets/fb94a1c4-25b1-434b-971e-07c6fd5e51e1">
 
