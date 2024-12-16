@@ -42,7 +42,7 @@ NLPs prototype 제작 목적
 
 
 
-# NLPs prototype LLM 선정
+# NLPs prototype on-premise LLM 선정
 선정 LLM
 ```sh
 Llama-3.1-70B-Instruct
