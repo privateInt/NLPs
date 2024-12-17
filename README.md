@@ -14,21 +14,22 @@ GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 
 </div>
 </details>
-
-
 <br><br>
+
+
 # NLPs prototype 개요
 - NLPs prototype이란?
 ```sh
 NLPs 개발 과정에서의 어려움, 노하우 등을 미리 파악하기 위해
 금융 분야 특화 번역 agent 시제품 개발 테스트
 ```
+<br>
 - NLPs prototype 제작 목적
 ```sh
 1. NLPs의 구현 가능성 확인
 2. agent fine-tuning 및 serving 시 한계 파악 및 성능 향상 방안 연구
 ```
-
+<br>
 <details>
 <summary>관련자료 미리보기 (NLPs prototype 개발제안서.pptx)</summary>
 <div markdown="1">
@@ -39,19 +40,20 @@ NLPs 개발 과정에서의 어려움, 노하우 등을 미리 파악하기 위�
 
 </div>
 </details>
-
+<br><br>
 
 
 # NLPs prototype on-premise LLM 선정
 - 선정 LLM
 ```sh
 Llama-3.1-70B-Instruct
+<br>
 ```
 - 선정 근거
 ```sh
 Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, inference 속도 비교
 ```
-
+<br>
 <details>
 <summary>관련자료 미리보기 ( NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype LLM 기본성능 테스트.xlsx)</summary>
 <div markdown="1">
@@ -61,7 +63,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 
 </div>
 </details>
-
+<br><br>
 
 
 # NLPs prototype Hardware 선정
@@ -73,6 +75,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 |NVIDIA Ada L40S 48GB GDDR6 PCIe|4|
 |Samsung SSD PM893 1.92TB, 2.5in|2|
 |32G DDR5 RDIMM|16|
+<br>
 
 - Hardware 선정시 고려사항
 ```sh
@@ -80,6 +83,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 2. fine-tuning, inference시 RAM, GPU memory 사용량
 3. LLM 용량
 ```
+<br>
 
 <details>
 <summary>관련자료 미리보기 (NLPs prototype LLM 및 GPU 선정.pptx, NLPs prototype GPU 성능 테스트.pptx)</summary>
@@ -93,6 +97,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 
 </div>
 </details>
+<br><br>
 
 
 
@@ -111,6 +116,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 |learning_rate|2e-4|
 |warmup_steps|1000|
 |GPU memory usage|약 43GB|
+<br>
 
 - 실험 결과 및 개선 사항
 
@@ -130,6 +136,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 1. 배치 크기 등 hyper parameter는 금방 검증할 수 있으므로 1순위로 검증한다.
 2. hyper parameter tuning이 효과가 없는 경우 데이터의 중복(같은 한국어를 다른 영어로 번역한 데이터가 있는 경우 등)을 검사한다.
 ```
+<br><br>
 
 
 
@@ -148,6 +155,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 |learning_rate|2e-4|
 |warmup_steps|1000|
 |GPU memory usage|약 69GB|
+<br>
 
 - 테스트 목록
 ```sh
@@ -155,6 +163,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 2. epoch: 3 -> 10 (이후 epoch별 check point의 성능을 점검하여 최적의 epoch 선정)
 3. 한국어로 fine-tuning된 8B 모델(allganize/Llama-3-Alpha-Ko-8B-Instruct) 추가 테스트 
 ```
+<br>
 
 <details>
 <summary>한국어 8B fine-tuning model inference 예시 (input: 한국어, output: 영어)</summary>
@@ -165,6 +174,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 
 </div>
 </details>
+<br>
 
 
 - 실험 결과 및 개선 사항
@@ -190,6 +200,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 2. RAG(bge-m3)를 사용해 학습 데이터와 inference prompt에 적절한 예시 추가
 3. chatGPT 등을 사용하여 DPO 학습 데이터 구축후 DPO 학습 실험
 ```
+<br>
 
 <details>
 <summary>관련자료 미리보기 (NLPs prototype fine-tuning 결과.xlsx, NLPs prototype fine-tuning 결과 발표.pptx)</summary>
@@ -201,6 +212,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 
 </div>
 </details>
+<br><br>
 
 
 
@@ -210,6 +222,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 기존에 구축한 범용 번역시스템에
 RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 ```
+<br>
 
 - RAG 구현 과정
 ```sh
@@ -220,6 +233,7 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 3. np.vstack으로 vectorDB 구축 후 fastAPI의 lifespan을 통해 서버 실행시 vectorDB 로드를 한번만 수행
 4. 반드시 특정 단어로 번역돼야 하는 사전 데이터를 우선 적용 후 RAG 적용
 ```
+<br>
 
 - RAG 개선 사항
 ```sh
@@ -229,6 +243,7 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 3. classification 등 방법을 통해 vectorDB를 분리하여 실행 속도 향상 필요 
    (classification 기준은 해당 분야 전문가와 협의 필요)
 ```
+<br>
 
 <details>
 <summary>관련자료 미리보기 (NLPs prototype API embedding 모델 선정.docx, NLPs prototype API RAG 효과 분석 .docx, NLPs prototype API RAG 결과 예시.zip)</summary>
@@ -260,3 +275,4 @@ folder
 
 </div>
 </details>
+<br><br>
