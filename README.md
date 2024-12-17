@@ -4,7 +4,7 @@
 고객요청에 따른 LLM agent(번역, 챗봇, 분석 등)조합을 on-premise 또는 API로 개발하여
 GPU서버에 설치후 GPU서버 자체를 판매하는 프로젝트
 ```
-
+<br>
 <details>
 <summary>관련자료 미리보기 (NLPs 개발계획.pptx)</summary>
 <div markdown="1">
