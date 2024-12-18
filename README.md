@@ -186,13 +186,14 @@ NLPs_on_premise
 
 
 # 환경
-- GPU: A100(40GiB)GPU * 4
-- 저장 모델 용량: DPR 2.5GB, LLM 9.5GB
-- python 3.8
-- CUDA Version 12.0
-- Nvidia Driver Version 525.105.17
+- GPU: A100(80GiB)GPU
+- python 3.10
+- CUDA Version 12.6
+- Nvidia Driver Version 560.35.03
   
-![Cap 2024-05-30 09-31-10-647](https://github.com/privateInt/RAG-chatbot/assets/95892797/72d2fe19-8af6-4dc0-993e-9b6c958173d7)
+<img width="472" alt="20241218_220821" src="https://github.com/user-attachments/assets/caef58da-7d6f-42bf-b12a-0aabeb15f8ae" />
+
+
 
 # 학습 실험
 
