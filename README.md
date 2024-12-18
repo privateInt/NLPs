@@ -1,3 +1,7 @@
+<details>
+<summary>NLPs 프로젝트 개요</summary>
+<div markdown="1">
+
 # NLPs 개요
 - NLPs란?
 ```sh
@@ -114,6 +118,11 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 </details>
 
 <br><br>
+
+</div>
+</details>
+
+
 
 
 
