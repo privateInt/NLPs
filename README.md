@@ -169,7 +169,11 @@ NLPs_on_premise
 # 폴더 및 파일 역할
 | 폴더 및 파일 | 설명 |
 |------|--------|
-|data|fine-tuning 및 RAG 대상 파일을 저장하는 폴더, 현재 xlsx파일을 읽고 처리하는 방식이며, xlsx파일의 column에는 출처,제시문,질문,답변이 포함돼야 한다.
+|requirements.txt|project 작동시 필요한 library를 모아놓은 txt파일|
+|main.py|LLM의 fine-tuning 결과를 이용해 inference server(FastAPI)를 작동|
+|main.py|lifespan 등 FastAPI 관련 utils 정의|
+|fine-tuning|fine-tuning 및 데이터를 저장하는 폴더|
+|fine-tuning/data|LLM fine-tuning 데이터를 위치시키는 폴더, pkl파일을 읽고 처리하는 방식이며, 데이터셋은 List[dict] 형태.|
 |DPR|DPR 관련 코드 저장|
 |DPR/DPR_data.py|데이터 parsing 및 pytorch dataloader에 load할 수 있게 가공하여 pickle로 저장한다. (train.p, test.p, for_retriever_src.p)|
 |DPR/DPR_model.py|DPR model을 정의한 파일, 모델은 질문(query)과 제시문(passage)를 각각의 encoder로 처리한다.|
@@ -182,8 +186,7 @@ NLPs_on_premise
 |LLM/LLM_trainer.py|LLM을 fine-tuning하여 결과를 bin파일로 저장한다.|
 |templates|LLM fine-tuning 및 inference시 사용하는 prompt를 저장하는 폴더|
 |templates/kullm.json|prompt engineering에 대한 정보가 담겨 입력 데이터를 가공하는 json파일|
-|requirements.txt|project 작동시 필요한 library를 모아놓은 txt파일|
-|server.py|DPR, LLM의 fine-tuning 결과를 이용해 inference server(flask)를 작동|
+
 |app.py|inference server에 입력값을 전송하고 return값을 출력하는 데모 페이지(streamlit)작동|
 |run.sh|inference server와 데모 페이지를 한번에 작동하는 shell script 명령어 파일|
 |Dokcerfile|project 결과를 docker image로 build할 수 있도록 명령어들을 모아놓은 파일|
