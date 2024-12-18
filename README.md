@@ -319,37 +319,6 @@ GPU memory usage 약 69GB
 
 <br><br>
 
-## DPR
-- hyper parameter
-  
-| hyper parameter | value |
-|------|--------|
-|epochs|20|
-|batch_size|16|
-|learning_rate|3e-4|
-|passage_chunk_size|100|
-
-- GPU memory usage(fine-tuning): 약 25GiB
-- GPU memory usage(inference): 약 4GiB
-- DPR 논문에 의하면 batch_size를 크게할 수록 negative sample을 증가시켜 fine-tuning 성능을 향상시킬 수 있다.
-- DPR 논문에 의하면 passage를 chunk_size로 분할하여 검색한다. 이 project에서는 정보 손실을 고려하여 분할된 chunk를 원복하여 LLM에 제공한다.
-
-## LLM
-- hyper parameter
-  
-| hyper parameter | value |
-|------|--------|
-|lora_r|32|
-|lora_alpha|lora_r * 2|
-|epochs|20|
-|batch_size|128|
-|micro_batch_size|8|
-|learning_rate|3e-5|
-
-- GPU memory usage(fine-tuning): 약 60GiB
-- GPU memory usage(inference): 약 56GiB
-- lora값에 따라 trainable parameter가 결정됐다. lora논문에 의하면 trainable parameter가 0.2%여도 성능에 큰 차이가 없다는 사실을 확인하기 위해, lora_r의 값은 32, 3072로 조정하여 각 trainable parameter를 0.2%, 16.3%로 변경하여 fine-tuning 성능을 비교했지만 큰 차이를 발견할 수 없었다.
-- 데이터 수와 품질의 관계를 파악하기 위해 데이터 수가 많지만 품질이 떨어지는 데이터셋, 데이터 수가 적지만 품질이 좋은 데이터셋을 각각 fine-tuning하여 성능을 비교했다. 비교 결과 데이터 수가 적더라도 품질이 뛰어나야 LLM의 성능에 긍정적이라는 사실을 확인했다.
 
 # 명령어
 
@@ -363,15 +332,15 @@ GPU memory usage 약 69GB
     <td>pip install -r requirements.txt</td>
   </tr>
   <tr>
-    <td rowspan="3">DPR 학습</td>
+    <td rowspan="3">LLM fine-tuning</td>
     <td>cd [YOUR WORKSPACE]</td>
   </tr>
     <!-- Cell 2 is merged with the cell above -->
-    <td>cd DPR</td>
+    <td>cd fine-tuning</td>
   </tr>
   <tr>
     <!-- Cell 2 is merged with the cell above -->
-    <td>python DPR_trainer.py</td>
+    <td>python train.py</td>
   </tr>
   <tr>
     <td rowspan="3">LLM 학습</td>
