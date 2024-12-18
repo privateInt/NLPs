@@ -197,6 +197,126 @@ NLPs_on_premise
 
 # 학습 실험
 
+## fine-tuning 1차 실험
+- hyper parameter
+
+| 항목 | 수치 및 내용 |
+|------|--------|
+|model|meta-llama/Llama-3.1-70B-Instruct|
+|LoRA_r|16|
+|QLoRA|4bit|
+|dtype|bf16|
+|epoch|3|
+|per_device_train_batch_size|2|
+|gradient_accumulation_steps|4|
+|learning_rate|2e-4|
+|warmup_steps|1000|
+|GPU memory usage|약 43GB|
+
+<br>
+
+- 실험 결과 및 개선 사항
+
+<img width="211" alt="20241207_165834" src="https://github.com/user-attachments/assets/94b77e3e-d3ee-40a9-842d-8ce1173514f0">
+<img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
+
+```sh
+# 결과
+Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있으므로 Loss 진동폭 감소 방안 필요
+
+# 개선을 위한 가설
+1. 배치 크기(batch_size & gradient_accumulate_step)가 너무 작음
+2. 데이터의 일관성 부족
+* 학습률도 loss 진동폭에 영향을 미칠 수 있으나 그래프가 안정적이므로 적절하다 판단함.
+
+# 개선 계획
+1. 배치 크기 등 hyper parameter는 금방 검증할 수 있으므로 1순위로 검증한다.
+2. hyper parameter tuning이 효과가 없는 경우 데이터의 중복(같은 한국어를 다른 영어로 번역한 데이터가 있는 경우 등)을 검사한다.
+```
+
+<br><br>
+
+
+
+## fine-tuning 2차 실험
+- hyper parameter
+
+| 항목 | 수치 및 내용 |
+|------|--------|
+|model|meta-llama/Llama-3.1-70B-Instruct, allganize/Llama-3-Alpha-Ko-8B-Instruct|
+|LoRA_r|16|
+|QLoRA|4bit|
+|dtype|bf16|
+|epoch|10|
+|per_device_train_batch_size|32|
+|gradient_accumulation_steps|4|
+|learning_rate|2e-4|
+|warmup_steps|1000|
+|GPU memory usage|약 69GB|
+
+<br>
+
+- 테스트 목록
+```sh
+1. per_device_train_batch_size: 2 -> 32 (현재 GPU에서 작동 가능 여부, Loss 진동폭 감소 여부 확인)
+2. epoch: 3 -> 10 (이후 epoch별 check point의 성능을 점검하여 최적의 epoch 선정)
+3. 한국어로 fine-tuning된 8B 모델(allganize/Llama-3-Alpha-Ko-8B-Instruct) 추가 테스트 
+```
+
+<br>
+
+<details>
+<summary>한국어 8B fine-tuning model inference 예시 (input: 한국어, output: 영어)</summary>
+<div markdown="1">
+
+<img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
+<img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
+
+</div>
+</details>
+
+<br>
+
+
+- 실험 결과 및 개선 사항
+
+<img width="363" alt="20241207_170641" src="https://github.com/user-attachments/assets/a5061cae-ad3b-4125-8b52-feb24d60a1ca">
+<img width="361" alt="20241207_170635" src="https://github.com/user-attachments/assets/fb94a1c4-25b1-434b-971e-07c6fd5e51e1">
+
+
+```sh
+# 결과
+1. batch_size 증가로 loss 진동폭 안정화 됨
+2. epoch는 2 ~ 3정도가 충분했으며, 그 이상은 overfitting 현상을 보임
+3. 한국어로 fine-tuning된 8B 모델과 70B 모델의 차이가 크지 않았음
+   => 8B 모델로 실험 진행후 실험 결과는 70B에 적용하는 것이 시간 효율을 극대화할 수 있다 판단
+4. input이 짧은 경우 품질이 좋았으나, input이 길어질수록 품질 저하 현상 발생
+
+# 개선을 위한 가설
+1. quantization 수치(4bit)가 너무 낮았을 가능성이 있음
+2. 문장이 길어질수록 사용하는 단어가 많기때문에 SFT 학습만으로 부족할 수 있음
+
+# 개선 계획
+1. quantization 8bit 실험 후 추가 실험 필요 여부 판단
+2. RAG(bge-m3)를 사용해 학습 데이터와 inference prompt에 적절한 예시 추가
+3. chatGPT 등을 사용하여 DPO 학습 데이터 구축후 DPO 학습 실험
+```
+
+<br>
+
+<details>
+<summary>관련자료 미리보기 (NLPs prototype fine-tuning 결과.xlsx, NLPs prototype fine-tuning 결과 발표.pptx)</summary>
+<div markdown="1">
+
+<img width="858" alt="20241208_203642" src="https://github.com/user-attachments/assets/e36ea864-1128-4c08-a5e2-05656f152168">
+<img width="792" alt="20241208_203705" src="https://github.com/user-attachments/assets/7d1b9a7f-a563-40e1-af17-92e344da72dc">
+<img width="760" alt="20241208_203711" src="https://github.com/user-attachments/assets/cba40302-848e-4ecb-8dff-c443b8fa40e4">
+
+</div>
+</details>
+
+<br><br>
+
 ## DPR
 - hyper parameter
   
@@ -327,125 +447,7 @@ NLPs_on_premise
 
 
 
-# NLPs prototype fine-tuning 1차 실험
-- hyper parameter
 
-| 항목 | 수치 및 내용 |
-|------|--------|
-|model|meta-llama/Llama-3.1-70B-Instruct|
-|LoRA_r|16|
-|QLoRA|4bit|
-|dtype|bf16|
-|epoch|3|
-|per_device_train_batch_size|2|
-|gradient_accumulation_steps|4|
-|learning_rate|2e-4|
-|warmup_steps|1000|
-|GPU memory usage|약 43GB|
-
-<br>
-
-- 실험 결과 및 개선 사항
-
-<img width="211" alt="20241207_165834" src="https://github.com/user-attachments/assets/94b77e3e-d3ee-40a9-842d-8ce1173514f0">
-<img width="483" alt="스크린샷 2024-09-11 오전 9 10 43" src="https://github.com/user-attachments/assets/d6a5fd62-39bb-4476-8b5c-119a0f671923">
-
-```sh
-# 결과
-Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있으므로 Loss 진동폭 감소 방안 필요
-
-# 개선을 위한 가설
-1. 배치 크기(batch_size & gradient_accumulate_step)가 너무 작음
-2. 데이터의 일관성 부족
-* 학습률도 loss 진동폭에 영향을 미칠 수 있으나 그래프가 안정적이므로 적절하다 판단함.
-
-# 개선 계획
-1. 배치 크기 등 hyper parameter는 금방 검증할 수 있으므로 1순위로 검증한다.
-2. hyper parameter tuning이 효과가 없는 경우 데이터의 중복(같은 한국어를 다른 영어로 번역한 데이터가 있는 경우 등)을 검사한다.
-```
-
-<br><br>
-
-
-
-# NLPs prototype fine-tuning 2차 실험
-- hyper parameter
-
-| 항목 | 수치 및 내용 |
-|------|--------|
-|model|meta-llama/Llama-3.1-70B-Instruct, allganize/Llama-3-Alpha-Ko-8B-Instruct|
-|LoRA_r|16|
-|QLoRA|4bit|
-|dtype|bf16|
-|epoch|10|
-|per_device_train_batch_size|32|
-|gradient_accumulation_steps|4|
-|learning_rate|2e-4|
-|warmup_steps|1000|
-|GPU memory usage|약 69GB|
-
-<br>
-
-- 테스트 목록
-```sh
-1. per_device_train_batch_size: 2 -> 32 (현재 GPU에서 작동 가능 여부, Loss 진동폭 감소 여부 확인)
-2. epoch: 3 -> 10 (이후 epoch별 check point의 성능을 점검하여 최적의 epoch 선정)
-3. 한국어로 fine-tuning된 8B 모델(allganize/Llama-3-Alpha-Ko-8B-Instruct) 추가 테스트 
-```
-
-<br>
-
-<details>
-<summary>한국어 8B fine-tuning model inference 예시 (input: 한국어, output: 영어)</summary>
-<div markdown="1">
-
-<img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
-<img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
-
-</div>
-</details>
-
-<br>
-
-
-- 실험 결과 및 개선 사항
-
-<img width="363" alt="20241207_170641" src="https://github.com/user-attachments/assets/a5061cae-ad3b-4125-8b52-feb24d60a1ca">
-<img width="361" alt="20241207_170635" src="https://github.com/user-attachments/assets/fb94a1c4-25b1-434b-971e-07c6fd5e51e1">
-
-
-```sh
-# 결과
-1. batch_size 증가로 loss 진동폭 안정화 됨
-2. epoch는 2 ~ 3정도가 충분했으며, 그 이상은 overfitting 현상을 보임
-3. 한국어로 fine-tuning된 8B 모델과 70B 모델의 차이가 크지 않았음
-   => 8B 모델로 실험 진행후 실험 결과는 70B에 적용하는 것이 시간 효율을 극대화할 수 있다 판단
-4. input이 짧은 경우 품질이 좋았으나, input이 길어질수록 품질 저하 현상 발생
-
-# 개선을 위한 가설
-1. quantization 수치(4bit)가 너무 낮았을 가능성이 있음
-2. 문장이 길어질수록 사용하는 단어가 많기때문에 SFT 학습만으로 부족할 수 있음
-
-# 개선 계획
-1. quantization 8bit 실험 후 추가 실험 필요 여부 판단
-2. RAG(bge-m3)를 사용해 학습 데이터와 inference prompt에 적절한 예시 추가
-3. chatGPT 등을 사용하여 DPO 학습 데이터 구축후 DPO 학습 실험
-```
-
-<br>
-
-<details>
-<summary>관련자료 미리보기 (NLPs prototype fine-tuning 결과.xlsx, NLPs prototype fine-tuning 결과 발표.pptx)</summary>
-<div markdown="1">
-
-<img width="858" alt="20241208_203642" src="https://github.com/user-attachments/assets/e36ea864-1128-4c08-a5e2-05656f152168">
-<img width="792" alt="20241208_203705" src="https://github.com/user-attachments/assets/7d1b9a7f-a563-40e1-af17-92e344da72dc">
-<img width="760" alt="20241208_203711" src="https://github.com/user-attachments/assets/cba40302-848e-4ecb-8dff-c443b8fa40e4">
-
-</div>
-</details>
-
-<br><br>
 
 
 
