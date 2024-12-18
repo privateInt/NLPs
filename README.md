@@ -211,7 +211,7 @@ NLPs_on_premise
 |gradient_accumulation_steps|4|
 |learning_rate|2e-4|
 |warmup_steps|1000|
-+ GPU memory usage 약 43GB
+GPU memory usage 약 43GB
 
 <br>
 
@@ -252,7 +252,7 @@ Loss 진동폭이 너무 커지는 현상 발생 => 학습이 잘 안될 수 있
 |gradient_accumulation_steps|4|
 |learning_rate|2e-4|
 |warmup_steps|1000|
-* GPU memory usage 약 69GB
+GPU memory usage 약 69GB
 
 <br>
 
