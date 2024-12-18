@@ -1,0 +1,19 @@
+# Upgrade pip
+pip>=23.1
+
+# Unsloth 라이브러리 (GitHub 설치)
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+
+# 주요 라이브러리 설치
+xformers
+fastapi
+uvicorn
+autoawq
+transformers>=4.33.0
+trl<0.9.0
+peft
+accelerate
+bitsandbytes
+
+# 추가 툴
+wandb
