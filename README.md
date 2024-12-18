@@ -211,7 +211,7 @@ NLPs_on_premise
 |gradient_accumulation_steps|4|
 |learning_rate|2e-4|
 |warmup_steps|1000|
-* GPU memory usage 약 43GB
++ GPU memory usage 약 43GB
 
 <br>
 
