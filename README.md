@@ -267,18 +267,6 @@ GPU memory usage 약 69GB
 
 <br>
 
-<details>
-<summary>한국어 8B fine-tuning model inference 예시 (input: 한국어, output: 영어)</summary>
-<div markdown="1">
-
-<img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
-<img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
-
-</div>
-</details>
-
-<br>
-
 
 - 실험 결과 및 개선 사항
 
@@ -303,6 +291,20 @@ GPU memory usage 약 69GB
 2. RAG(bge-m3)를 사용해 학습 데이터와 inference prompt에 적절한 예시 추가
 3. chatGPT 등을 사용하여 DPO 학습 데이터 구축후 DPO 학습 실험
 ```
+
+<br>
+
+<details>
+<summary>한국어 8B fine-tuning model inference 예시 (input: 한국어, output: 영어)</summary>
+<div markdown="1">
+
+<img width="415" alt="20241208_195727" src="https://github.com/user-attachments/assets/d8666492-e845-4c25-bc66-5c127499a6d6">
+<img width="699" alt="20241208_195105" src="https://github.com/user-attachments/assets/5f137c64-d1d7-4cae-8dcf-a779711d9936">
+
+</div>
+</details>
+
+
 
 <br>
 
