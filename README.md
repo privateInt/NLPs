@@ -185,6 +185,40 @@ NLPs_on_premise
 |translation/utils.py|keyword searching 알고리즘 등 utils 정의|
 
 
+# 명령어
+
+<table border="1">
+  <tr>
+    <th>내용</th>
+    <th>명령어</th>
+  </tr>
+  <tr>
+    <td>환경 설치</td>
+    <td>pip install -r requirements.txt</td>
+  </tr>
+  <tr>
+    <td rowspan="3">LLM fine-tuning</td>
+    <td>cd [YOUR WORKSPACE]</td>
+  </tr>
+    <!-- Cell 2 is merged with the cell above -->
+    <td>cd fine-tuning</td>
+  </tr>
+  <tr>
+    <!-- Cell 2 is merged with the cell above -->
+    <td>python train.py</td>
+  </tr>
+  <tr>
+    <td rowspan="2">run server</td>
+    <td>cd [YOUR WORKSPACE]</td>
+  </tr>
+  <tr>
+    <!-- Cell 2 is merged with the cell above -->
+    <td>python main.py</td>
+  </tr>
+  
+</table>
+
+
 # 환경
 - GPU: A100(80GiB)GPU
 - python 3.10
@@ -319,38 +353,7 @@ GPU memory usage 약 69GB
 <br><br>
 
 
-# 명령어
 
-<table border="1">
-  <tr>
-    <th>내용</th>
-    <th>명령어</th>
-  </tr>
-  <tr>
-    <td>환경 설치</td>
-    <td>pip install -r requirements.txt</td>
-  </tr>
-  <tr>
-    <td rowspan="3">LLM fine-tuning</td>
-    <td>cd [YOUR WORKSPACE]</td>
-  </tr>
-    <!-- Cell 2 is merged with the cell above -->
-    <td>cd fine-tuning</td>
-  </tr>
-  <tr>
-    <!-- Cell 2 is merged with the cell above -->
-    <td>python train.py</td>
-  </tr>
-  <tr>
-    <td rowspan="2">run server</td>
-    <td>cd [YOUR WORKSPACE]</td>
-  </tr>
-  <tr>
-    <!-- Cell 2 is merged with the cell above -->
-    <td>python main.py</td>
-  </tr>
-  
-</table>
 
 
 
