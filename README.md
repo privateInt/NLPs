@@ -305,9 +305,6 @@ GPU memory usage 약 69GB
 </details>
 
 
-
-<br>
-
 <details>
 <summary>관련자료 미리보기 (NLPs prototype fine-tuning 결과.xlsx, NLPs prototype fine-tuning 결과 발표.pptx)</summary>
 <div markdown="1">
