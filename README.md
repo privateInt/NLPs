@@ -128,29 +128,6 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 
 <br>
 
-- RAG 구현 과정
-```sh
-1. embedding model (openAI text-embedding-3-small) 선정
-2. cosine similarity 적용 방식 변경 (iteration -> matrix)
-   => iteration으로 구현시 multi-processing 적용하여 실행 시간 이득을 볼 수 있을거라 생각했으나,
-      데이터 복제에 시간이 더 소요돼 matrix연산으로 변경
-3. np.vstack으로 vectorDB 구축 후 fastAPI의 lifespan을 통해 서버 실행시 vectorDB 로드를 한번만 수행
-4. 반드시 특정 단어로 번역돼야 하는 사전 데이터를 우선 적용 후 RAG 적용
-```
-
-<br>
-
-- RAG 개선 사항
-```sh
-1. faiss, milvus 등 vectorDB 적용하여 실행시간 비교 필요 
-   (현재는 np형태이며 계산도 직접짠 계산식으로 연산)
-2. vectorDB의 중복을 제거하여 실행 속도 향상 필요
-3. classification 등 방법을 통해 vectorDB를 분리하여 실행 속도 향상 필요 
-   (classification 기준은 해당 분야 전문가와 협의 필요)
-```
-
-<br>
-
 <details>
 <summary>관련자료 미리보기 (NLPs prototype API embedding 모델 선정.docx, NLPs prototype API RAG 효과 분석 .docx, NLPs prototype API RAG 결과 예시.zip)</summary>
 <div markdown="1">
