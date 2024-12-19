@@ -119,6 +119,7 @@ Llama, Qwen, Mistral 기본성능 정성 평가 결과, GPU memory 사용량, in
 
 <br><br>
 
+# NLPs prototype API 버전 개요
 - NLPs prototype API 버전이란?
 ```sh
 기존에 구축한 범용 번역시스템에
