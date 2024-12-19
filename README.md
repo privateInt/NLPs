@@ -459,7 +459,6 @@ folder
           └── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02)_trans.xlsx (RAG 미적용 inference 예시)
 ```
 
-<img width="459" alt="20241209_185027" src="https://github.com/user-attachments/assets/ebd8259d-d609-4abb-8806-c271a47b16e5">
 <img width="792" alt="20241209_184959" src="https://github.com/user-attachments/assets/d54037ec-b0d5-40cc-a5fa-45bed89456a8">
 <img width="452" alt="20241209_185036" src="https://github.com/user-attachments/assets/67505f19-0cd1-4220-be60-bdf05b1470d2">
 
