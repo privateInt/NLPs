@@ -433,7 +433,7 @@ NLPs_on_API
 
 # 사용방법
 - convert_1to1.py, retriever.py은 class로 구성돼 있으며, FastAPI 실행시 lifespan을 통해 load하여 원하는 알고리즘에 사용한다.
-- class의 init에서 memory를 load하며 lifespan을 사용하기 때문에 FastAPI 실행시 1번만, 자동으로 데이터가 memory에 load된다.
+- class init에서 data load하며 lifespan을 사용하기 때문에 FastAPI 실행시 1번만, 자동으로 memory에 data load된다.
 
 
 <details>
