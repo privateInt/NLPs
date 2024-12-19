@@ -433,3 +433,35 @@ NLPs_on_API
 # 사용방법
 - convert_1to1.py, retriever.py은 class로 구성돼 있으며, FastAPI 실행시 lifespan을 통해 load하여 원하는 알고리즘에 사용한다.
 - class의 init에서 memory를 load하며 lifespan을 사용하기 때문에 FastAPI 실행시 1번만, 자동으로 데이터가 memory에 load된다.
+
+
+<details>
+<summary>API 번역 예시</summary>
+<div markdown="1">
+
+```sh
+# NLPs prototype API RAG 결과 예시.zip 파일 구조 예시
+# 문서 난이도 별로 상, 중, 하로 구분되며 각 예시 내부에
+# 한국어 원본 (파일명 끝에 아무것도 붙지 않음),
+# 영어 정답본 (파일명 끝에 -한영C 붙음),
+# RAG 적용 inference 예시 (파일명 끝에 _4o_rag_trans 붙음),
+# RAG 미적용 inference 예시 (파일명 끝에 _trans 붙음)
+# 총 4가지 파일이 있다.
+folder
+├── 상
+├── 중
+└── 하
+    ├── CJ제일제당 결산실적공시 예고(안내공시) (2024.04.23)
+    └── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02)
+          ├── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02).xlsx (한국어 원본)
+          ├── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02)-한영C.xlsx (영어 정답본)
+          ├── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02)_4o_rag_trans.xlsx (RAG 적용 inference 예시)
+          └── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02)_trans.xlsx (RAG 미적용 inference 예시)
+```
+
+<img width="459" alt="20241209_185027" src="https://github.com/user-attachments/assets/ebd8259d-d609-4abb-8806-c271a47b16e5">
+<img width="792" alt="20241209_184959" src="https://github.com/user-attachments/assets/d54037ec-b0d5-40cc-a5fa-45bed89456a8">
+<img width="452" alt="20241209_185036" src="https://github.com/user-attachments/assets/67505f19-0cd1-4220-be60-bdf05b1470d2">
+
+</div>
+</details>
