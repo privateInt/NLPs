@@ -408,48 +408,28 @@ GPU memory usage 약 69GB
 
 # 기능
 
-- LLM을 fine-tuning 할 수 있다. unsloth를 사용했으며 LoRA, QLoRA 등 PEFT가 가능하다.(default: meta-llama/Llama-3.1-8B-Instruct)
-- 금융분야 관련 user input(한국어) 입력시 영어 번역문을 출력할 수 있다.
-- 한국어, 영어로 구성된 사전을 통해 user input(한국어, 영어) 입력시 keyword를 추출할 수 있다.
-- fine-tining 결과 및 FastAPI 서버로 띄울 수 있다.
+- vectorDB를 구축할 수 있다. 
+- 해당 분야에서 반드시 사용되야 하는 단어를 사용할 수 있다.
+- 번역 대상(한국어)과 유사한 번역 예시(한국어, 영어)를 추출할 수 있다.  
 
 # 파일 구조
 ```sh
-NLPs_on_premise
-├── requirements.txt
-├── main.py
-├── main_utils.py
-└── fine-tuning 
-    ├── train.py
-    └── data
-         └── dataset.pkl
-└── translation
-    ├── eng_key_dict.json
-    ├── model.py
-    ├── prompt.py
-    ├── router.py
-    ├── schema.py
-    ├── service.py
-    └── utils.py
+NLPs_on_API
+├── build_vectorDB.py
+├── convert_1to1.py
+└── retriever.py
+
 ```
 
 # 폴더 및 파일 역할
 | 폴더 및 파일 | 설명 |
 |------|--------|
-|requirements.txt|project 작동시 필요한 library를 모아놓은 txt파일|
-|main.py|LLM의 fine-tuning 결과를 이용해 inference server(FastAPI)를 작동|
-|main.py|lifespan 등 FastAPI 관련 utils 정의|
-|fine-tuning|fine-tuning 및 데이터를 저장하는 폴더|
-|fine-tuning/data|LLM fine-tuning 데이터를 위치시키는 폴더, pkl파일을 읽고 처리하는 방식이며, 데이터셋은 List[dict] 형태.|
-|fine-tuning/train.py|LLM fine-tuning 코드, unsloth 사용|
-|translation|한->영 금융 번역 LLM agent 관련 코드 저장|
-|translation/eng_key_dict.json|keyword searching에 사용되는 한국어-영어 사전 데이터|
-|translation/model.py|LLM load 및 inference 코드를 class로 정의|
-|translation/prompt.py|한->영 금융 번역에 사용되는 prompt 정의 (추후 model과 prompt에 따라 다양한 번역 가능)|
-|translation/router.py|router 정의|
-|translation/schema.py|router의 입출력 정의|
-|translation/service.py|router를 통해 호출받으면 model.py, utils.py 등의 기능을 조합한 service를 정의|
-|translation/utils.py|keyword searching 알고리즘 등 utils 정의|
+|build_vectorDB.py|embedding API(openAI/text-embedding-3-small)를 사용하여 text를 vector로 변환한다. 대규모 데이터 처리를 위해 multi-threading 적용|
+|convert_1to1.py|반드시 특정 영단어로 번역 해야하는 사전 데이터를 활용하여, 특정 영단어를 사용한다.|
+|retriever.py|vectorDB를 활용해 입력된 데이터와 유사도가 가장 높은 데이터를 추출할 수 있다. 연산 속도를 빠르게 하기 위해 input은 List형태로 받으며 np.vstack으로 변환 후, cosine similarity를 한번만 계산한다.|
 
 
 
+# 사용방법
+- convert_1to1.py, retriever.py은 class로 구성돼 있으며, FastAPI 실행시 lifespan을 통해 load하여 원하는 알고리즘에 사용한다.
+- class의 init에서 memory를 load하며 lifespan을 사용하기 때문에 FastAPI 실행시 1번만, 자동으로 데이터가 memory에 load된다.
