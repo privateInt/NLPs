@@ -132,6 +132,8 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 <summary>관련자료 미리보기 (NLPs prototype API embedding 모델 선정.docx, NLPs prototype API RAG 효과 분석 .docx, NLPs prototype API RAG 결과 예시.zip)</summary>
 <div markdown="1">
 
+<img width="459" alt="20241209_185027" src="https://github.com/user-attachments/assets/ebd8259d-d609-4abb-8806-c271a47b16e5">
+
 ```sh
 # NLPs prototype API RAG 결과 예시.zip 파일 구조 예시
 # 문서 난이도 별로 상, 중, 하로 구분되며 각 예시 내부에
@@ -152,7 +154,6 @@ folder
           └── 기아 기업설명회(IR) 개최(안내공시) (2024.07.02)_trans.xlsx (RAG 미적용 inference 예시)
 ```
 
-<img width="459" alt="20241209_185027" src="https://github.com/user-attachments/assets/ebd8259d-d609-4abb-8806-c271a47b16e5">
 <img width="792" alt="20241209_184959" src="https://github.com/user-attachments/assets/d54037ec-b0d5-40cc-a5fa-45bed89456a8">
 <img width="452" alt="20241209_185036" src="https://github.com/user-attachments/assets/67505f19-0cd1-4220-be60-bdf05b1470d2">
 
