@@ -446,6 +446,7 @@ folder
 <pre>
           RAG 적용 번역본                                                      한국어 원본
 </pre>
+&nbsp;&nbsp; RAG 적용 번역본 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 한국어 원본
 
 </div>
 </details>
