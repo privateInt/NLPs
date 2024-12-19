@@ -137,11 +137,13 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 ```sh
 # NLPs prototype API RAG 결과 예시.zip 파일 구조 예시
 # 문서 난이도 별로 상, 중, 하로 구분되며 각 예시 내부에
+
 # 한국어 원본 (파일명 끝에 아무것도 붙지 않음),
 # 영어 정답본 (파일명 끝에 -한영C 붙음),
 # RAG 적용 inference 예시 (파일명 끝에 _4o_rag_trans 붙음),
 # RAG 미적용 inference 예시 (파일명 끝에 _trans 붙음)
 # 총 4가지 파일이 있다.
+
 folder
 ├── 상
 ├── 중
@@ -443,11 +445,13 @@ NLPs_on_API
 ```sh
 # NLPs prototype API RAG 결과 예시.zip 파일 구조 예시
 # 문서 난이도 별로 상, 중, 하로 구분되며 각 예시 내부에
+
 # 한국어 원본 (파일명 끝에 아무것도 붙지 않음),
 # 영어 정답본 (파일명 끝에 -한영C 붙음),
 # RAG 적용 inference 예시 (파일명 끝에 _4o_rag_trans 붙음),
 # RAG 미적용 inference 예시 (파일명 끝에 _trans 붙음)
 # 총 4가지 파일이 있다.
+
 folder
 ├── 상
 ├── 중
