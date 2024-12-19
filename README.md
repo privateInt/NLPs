@@ -443,10 +443,8 @@ folder
 <img width="792" alt="20241209_184959" src="https://github.com/user-attachments/assets/d54037ec-b0d5-40cc-a5fa-45bed89456a8">
 
 <br>
-<pre>
-          RAG 적용 번역본                                                      한국어 원본
-</pre>
-&nbsp;&nbsp; RAG 적용 번역본 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 한국어 원본
+
+&nbsp;&nbsp;&nbsp;&nbsp; RAG 적용 번역본 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 한국어 원본
 
 </div>
 </details>
