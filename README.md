@@ -165,7 +165,7 @@ RAG를 적용해 금융 분야 특화 번역 agent 개발 테스트
 - LLM을 fine-tuning 할 수 있다. unsloth를 사용했으며 LoRA, QLoRA 등 PEFT가 가능하다.(default: meta-llama/Llama-3.1-8B-Instruct)
 - 금융분야 관련 user input(한국어) 입력시 영어 번역문을 출력할 수 있다.
 - 한국어, 영어로 구성된 사전을 통해 user input(한국어, 영어) 입력시 keyword를 추출할 수 있다.
-- fine-tining 결과 및 FastAPI 서버로 띄울 수 있다.
+- fine-tining 결과를 FastAPI 서버로 띄울 수 있다.
 
 # 파일 구조
 ```sh
