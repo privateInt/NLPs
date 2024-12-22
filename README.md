@@ -192,7 +192,7 @@ NLPs_on_premise
 |------|--------|
 |requirements.txt|project 작동시 필요한 library를 모아놓은 txt파일|
 |main.py|LLM의 fine-tuning 결과를 이용해 inference server(FastAPI)를 작동|
-|main.py|lifespan 등 FastAPI 관련 utils 정의|
+|main_utils.py|lifespan 등 FastAPI 관련 utils 정의|
 |fine-tuning|fine-tuning 및 데이터를 저장하는 폴더|
 |fine-tuning/data|LLM fine-tuning 데이터를 위치시키는 폴더, pkl파일을 읽고 처리하는 방식이며, 데이터셋은 List[dict] 형태.|
 |fine-tuning/train.py|LLM fine-tuning 코드, unsloth 사용|
